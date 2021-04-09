@@ -134,7 +134,7 @@ section.download {
   display:flex;
   justify-content: flex-end;
   border: 2px rgb(20, 75, 255) solid;
-  background:cornflowerblue;
+  background:rgb(223, 213, 202);
   border-radius:5px;
   margin-top:7px;
 }
@@ -147,7 +147,50 @@ section.download {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.flex-box-2 .copyBtn{
+  background-color: #ec7d16; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+.flex-box-2 .openBtn{
+  background-color: #1673ec; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+.flex-box-2 button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
 
+.flex-box-2 button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+
+.flex-box-2 button:hover span {
+  padding-right: 25px;
+}
+
+.flex-box-2 button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
 
 /* @keyframes App-logo-spin {
   from {

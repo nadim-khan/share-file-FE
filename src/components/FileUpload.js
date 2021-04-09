@@ -52,8 +52,8 @@ class FileUpload extends React.Component{
                         <div key={i}>
                             <div class="flex-box-2">
                             <p>{url}</p>
-                            <button onClick={() =>  navigator.clipboard.writeText(`${url}`)}>Copy</button>
-                            <button onClick={()=> window.open(`${url}`, "_blank")}>Open</button>
+                            <button className="copyBtn" onClick={() =>  navigator.clipboard.writeText(`${url}`)}><span>Copy</span></button>
+                            <button className="openBtn" onClick={()=> window.open(`${url}`, "_blank")}><span>Open</span></button>
                             </div>
                         </div>)}
                     </div> : null}
