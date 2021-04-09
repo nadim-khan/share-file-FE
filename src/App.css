@@ -3,8 +3,28 @@
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+}
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+}
+
+.gitLogo{
+  fill:#dfbb99c9;
+  color:rgb(235, 91, 25);
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+.gitSvgPath{
+  transform-origin: 130px 106px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,25 +34,80 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #fef2ed;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #000;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+.fileList{
+  width: 80%;
+  padding: 15px 15px 15px 15px;
+  margin: 120px 20px 20px 20px;
+  overflow: auto;
+  position: relative;
+}
+#x {
+  position: relative;
+  float: right;
+  font-size: 15px;
+  color: rgb(252, 0, 0);
+  top: -10px;
+  right: -10px;
+  background:none;
+  border:none;margin-bottom: 15px;;
+}
+                 
+section.download {
+  background: #fff;
+  width: 430px;
+  max-width: 90%;
+  border-radius: 25px;
+  box-shadow: 0px 20px 20px 0px #00000017;
+  padding: 2rem;
+  text-align: center;
+}
+.download__icon {
+  height: 8rem;
+}
+.download__meta {
+  width:25px;
+  height:25px;
+  display: inline-block;
+  margin-left:5px;
+}
+.send-btn-container button {
+  display: inline-block;
+  font-size: 25px;
+  padding: 8px 40px;
+  margin-top: 15px;
+  background: var(--light-blue);
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.send-btn-container a:hover {
+    background: var(--dark-blue);
+}
+
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
