@@ -79,12 +79,12 @@ section.download {
   height: 8rem;
 }
 .download__meta {
-  width:25px;
-  height:25px;
+  width:3rem;
+  height:3rem;
   display: inline-block;
   margin-left:5px;
 }
-.send-btn-container button {
+.send-btn-container button{
   display: inline-block;
   font-size: 25px;
   padding: 8px 40px;
@@ -100,6 +100,52 @@ section.download {
 
 .send-btn-container a:hover {
     background: var(--dark-blue);
+}
+.send-btn-container .inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    display: inline-block;
+    font-size: 25px;
+    padding: 8px 40px;
+    margin-top: 15px;
+    background: var(--light-blue);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+  background-color: rgb(255, 115, 0);
+  outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.flex-box-2 {
+  display:flex;
+  justify-content: flex-end;
+  border: 2px rgb(20, 75, 255) solid;
+  background:cornflowerblue;
+  border-radius:5px;
+  margin-top:7px;
+}
+
+.flex-box-2 p {
+  width: 250px;
+  font-size:12px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 

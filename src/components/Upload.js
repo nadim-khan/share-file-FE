@@ -7,8 +7,8 @@ export class upload extends Component {
         super(props)
     
         this.state = {
-            files: [
-            ]
+            files: [],
+            uploadedUrl:''
           }
     }
 
@@ -32,7 +32,7 @@ export class upload extends Component {
                 </div>
                 </DragAndDrop>
             }
-            <div class="send-btn-container">
+            <div className="send-btn-container">
             {
                 this.state.files.length ? 
                     <div className="fileList">

@@ -1,6 +1,7 @@
 import logo from './logo.png';
 import './App.css';
 import Upload from './components/Upload';
+import FileUpload from './components/FileUpload';
 
 const gitLogo = {
   fill:"#dfbb99c9",
@@ -20,7 +21,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Upload/>
+        <FileUpload/>
       </header>
       
       <a href={gitLink} className="github-corner" aria-label="View source on GitHub">

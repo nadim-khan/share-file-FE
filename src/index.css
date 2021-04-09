@@ -1,19 +1,19 @@
 :root {
-  --main-bg-color: #fef2ed;
-  --light-blue: #f46f03;
-  --dark-blue: #ca5c02;
-}
+    --main-bg-color: #fef2ed;
+    --light-blue: #f46f03;
+    --dark-blue: #ca5c02;
+  }
 
-body {
-  font-family: system-ui;
-  background: var(--main-bg-color);
-  height: 98vh;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #333;
-}
+  body {
+    font-family: system-ui;
+    background: var(--main-bg-color);
+    height: 98vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+  }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
